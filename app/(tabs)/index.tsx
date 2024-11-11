@@ -24,6 +24,7 @@ export default function ReminderList() {
           borderWidth: 1,
           paddingHorizontal: 10,
           marginBottom: 10,
+          color: 'blue'
         }}
       />
       <Button title="Add Reminder" onPress={addReminder} />
@@ -31,7 +32,7 @@ export default function ReminderList() {
         data={reminders}
         renderItem={({ item }) => (
           <View style={{ padding: 10, borderBottomWidth: 1, borderBottomColor: '#ccc' }}>
-            <Text>{item}</Text>
+            <Text >{item}</Text>
           </View>
         )}
         keyExtractor={(item, index) => index.toString()}
